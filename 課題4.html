@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>eelテスト</title>
+        <link rel="stylesheet" href="./style.css">
+        <meta charset="utf-8">
+        <script language="JavaScript">
+        function check() {
+            if(document.form1.name.value == "") {
+                alert("入力してください");
+                return false;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <h2>eelテスト</h2>
+        <script type="text/javascript" src="./eel.js"></script>
+
+        <!--検索box作成-->
+        <form name="form1" action="#" method="post" onSubmit="return check()">
+                <p>検索ワードを入力してください：
+                <input type="text" name="name"></p>
+                <p><input type="submit" value="検  索" id="button1"></p>
+                <textarea name="textarea1" value="" cols="50" rows=5 maxlength="15"></textarea>
+        </form>
+        <script>
+            search.addEventListener('click', () => {
+            })
+
+            eel.expose(view_log_js)
+            function view_log_js(text){
+
+            }
+
+        </script>
+    </body>
+</html>
